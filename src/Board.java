@@ -15,6 +15,9 @@ public class Board {
     public void setGrid(Cell[][] newGrid){
         this.Grid = newGrid;
     }
+    public void setCell(int x, int y, Cell.State toState){
+        this.Grid[x][y].state = toState;
+    }
     public int getSize() {return this.width * this.height;};
     public Cell[][] getGrid(){return this.Grid;}
 }
